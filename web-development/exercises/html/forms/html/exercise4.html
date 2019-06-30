@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise 4: Subscription form </title>
+	<style type="text/css">
+		body{
+			font-size: 24px;
+
+		}
+		fieldset{
+			background-color: #fcf7c7;
+			width: 500px;
+			margin:  auto;
+			text-align: center;
+
+		}
+		legend{
+			text-align: left;
+		}
+		.magazines{
+			text-align: left;
+		}
+		button {
+			margin-left: 48%;
+			font-size: 18px;
+		}
+		.fname{margin-left: 25px;}
+		.lname{margin-left: 35px;}
+		.mail{margin-left: -6px;}
+	</style>
+</head>
+<body>
+	<form action="">
+	<fieldset>
+	<legend>Personal details:</legend>
+	<label>First Name: <input class="fname"type="text" name="firstname" placeholder="First Name"></label>
+	<br>
+	<label>Last Name:<input class="lname"type="text" name="lastname" placeholder="Last name"></label>
+	<br>
+	<label>Email Address :<input class="mail"type="email" name="email" placeholder="Email address"></label>
+	<br>
+	<label>Gender : </label>
+		<input type="radio" name="male" value="male">male
+		<input type="radio" name="male" value="female">Female
+	<br>
+	</fieldset>
+
+	<fieldset class="magazines">
+	<legend >Magazines </legend>
+	<input type="checkbox" name="male" value="male">stavanger Aftenblad<br>
+	<input type="checkbox" name="male" value="female">Teknisk Ukeblad <br>
+	<input type="checkbox" name="male" value="male">Se og H&#216;r<br>
+	<input type="checkbox" name="male" value="female">Familien<br>
+	</fieldset>
+
+	<fieldset>
+	<legend>Subscription</legend>
+	<label style="font-size: 24px">Period :</label>
+		<select >
+		<option>6 months </option>	
+		<option>12 months </option>	
+		<option>18 months </option>	
+		<option>24 months </option>	
+
+	</select>
+	</legend>
+	<br>
+
+	</fieldset><br><br>
+	<button>Subscribe </button>
+	<br>
+
+</form>
+</body>
+</html>
