@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise#3:Grid Form	</title>
+	<style type="text/css">
+		.container{
+			width: 100%;
+			height: 300px;
+			background-color: #efefef;
+			display: grid;
+			grid-template-columns: 1fr 3fr;
+			align-content: center;
+		}
+		
+		.comments ,.content{
+			display:grid;
+			padding: 10px;
+			padding-bottom: 10px;
+		}
+		button{
+			background-color: gray;
+
+		}
+
+		
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="comments">
+			<label>Comments <textarea wrap="off" cols="20" rows="10"></textarea></label>
+			
+		</div>
+
+		<div class="content">
+			<label>Name</label>
+			<input type="text" name="name">
+			<label>E-mail</label>
+			<input type="text" name="name">
+			<label>Phone</label>
+			<input type="text" name="name">
+			<button>Submit</button>
+
+			
+		</div>
+	</div>
+</body>
+</html>

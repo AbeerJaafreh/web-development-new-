@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise#4 :Simple Grid Layout </title>
+	<style type="text/css">
+		.container{
+			display: grid;
+			grid-template-columns: repeat(1fr 12);
+			grid-template-rows: repeat(1fr 12);
+			height: 800px;	
+			grid-gap: 10px;	}
+
+			.container>div{background-color: yellow;
+				text-align: center;}
+			.header{grid-area: 1/1/1/12;}
+			.nav{grid-area: 2/1/11/3;}
+			.article{grid-area: 2/3/10/10;}
+			.ads{grid-area: 2/10/10/12;}
+			.footer{grid-area: 10/3/11/12;}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">Header</div>
+		<div class="nav">Nav</div>
+		<div class="article">Article</div>
+		<div class="ads">Ads</div>
+		<div class="footer">Footer</div>
+	</div>
+</body>
+</html>
